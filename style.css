@@ -1,0 +1,141 @@
+@import url(./reset.css);
+
+@font-face{
+    font-family: firaSans;
+    src: url("./fonts/FiraSans-Medium.woff");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    font-family: firaSans;
+    background-color: black;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(./images/nick-night-iukcNL5isUo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header a{
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 20px; 
+    text-align: center;
+    text-decoration: none;
+}
+
+a{
+    color: #fff;
+}
+
+a:hover{
+    text-decoration:underline #fff;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 50px;
+    padding: 60px 55px 0px 0px;
+    width: 100%;
+}
+
+.header-offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 6px;
+    padding-left: 100px;
+    position: relative;
+    height: 100%;
+}
+
+.header-title{
+    max-width: 600px;
+    font-weight: 700;
+    font-size: 128px;
+}
+
+.header-title2{
+    font-weight: 400;
+    font-size: 24px;  
+}
+
+footer a{
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer{
+    padding-top: 201px;
+    padding-bottom: 350px;
+}
+
+.text-On-Image{
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+    font-weight: 800;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+
+
+.line_lang{
+    display: inline-block;
+    background: #d9d9d9;
+    font-weight: 400;
+    font-size: 20px;
+    width: 2px;
+    height: 19px;
+    position: relative;
+    z-index: 1;
+}
+
+.lang_choose{
+    display: flex;
+    gap: 10px;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: 395px 395px 395px;
+    grid-template-rows: repeat(8, 435px);
+    
+}
+
+.images{
+    width: 500px;
+    height: 500px;
+}
+
+.menu{
+    display: none;
+}

@@ -1,0 +1,40 @@
+@media (max-width:769px){
+    .header-title {
+        font-size: 60px;
+    }
+
+    .header-title2{
+        font-size: 18px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .menu {
+        display: inline-block;
+        position: absolute;
+        z-index: 2;
+        top: 0px;
+        right: 0px;
+    }
+
+    .header-offer{
+        padding: 40px;
+    }
+
+}
+
+@media(max-width:1246px){
+    .header-title{
+        font-size: 100px;
+    }
+}
+
+@media(max-width:361px){
+    .footer-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
