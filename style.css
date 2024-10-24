@@ -126,16 +126,33 @@ footer{
 
 .gallery{
     display: grid;
-    grid-template-columns: 395px 395px 395px;
-    grid-template-rows: repeat(8, 435px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 435px);
+    gap: 30px;
     
 }
 
 .images{
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
 }
 
 .menu{
     display: none;
+}
+
+.horizont2{
+    grid-column: span 2;
+}
+
+.horizont3{
+    grid-column: span 3;
+}
+
+.vertical2{
+    grid-row: span 2;
+}
+
+.vertical3{
+    grid-row: span 3;
 }
