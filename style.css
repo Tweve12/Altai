@@ -43,10 +43,6 @@ a{
     color: #fff;
 }
 
-a:hover{
-    text-decoration:underline #fff;
-}
-
 .header-nav{
     display: flex;
     justify-content: flex-end;
@@ -54,6 +50,23 @@ a:hover{
     padding: 60px 55px 0px 0px;
     width: 100%;
 }
+
+.header-nav__link::after{
+    content: "";
+    border: 0px solid white;
+    width: 0%;
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+    transition: 1s;
+    box-sizing: border-box;
+}
+
+.header-nav__link:hover::after{
+    border: 2px solid white;
+    width: 100%;
+}
+
 
 .header-offer{
     display: flex;
@@ -132,9 +145,33 @@ footer{
     
 }
 
+.gallery li{
+    transition: 0.5s;
+    position: relative;
+}
+
+.gallery-text::after{
+    content: "Алтайский край - это в Сибири";
+    position: absolute;
+
+}
+
+.gallery li:hover{
+    transform: scale(1.05);
+}
+
 .images{
     width: 100%;
     height: 100%;
+}
+
+img {
+    filter: blur(0px);
+}
+   
+img:hover {
+    transition: 0.5s;
+    filter: blur(2px);
 }
 
 .menu{
